@@ -1,4 +1,4 @@
-# 출력 시간도 보여 주는 버전
+# 처음 코드
 import os
 import csv
 import torch

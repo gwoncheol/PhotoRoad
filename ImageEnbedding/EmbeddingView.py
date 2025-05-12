@@ -2,7 +2,7 @@
 import pickle
 import numpy as np
 
-with open("image_embeddings.pkl", "rb") as f:
+with open("ImageEnbedding/image_embeddings.pkl", "rb") as f:
     embeddings = pickle.load(f)
 
 # 전체 출력

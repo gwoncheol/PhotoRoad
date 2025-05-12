@@ -1,4 +1,4 @@
-#텍스트 레이블도 사용해서 돌아가는 코드드
+#이미지 + 텍스트 사용해서 유사도 계산 후 추천천
 import os
 import csv
 import torch
