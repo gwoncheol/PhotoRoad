@@ -56,7 +56,7 @@ def recommend_similar_images_with_text(user_image_path, top_k=5, alpha=0.5):
     return sims[:top_k]
 
 # 추천 실행
-user_image_path = "TestImage/car.jpg"
+user_image_path = "TestImage/카페.jpg"
 start = time.time()
 results = recommend_similar_images_with_text(user_image_path, top_k=3, alpha=0.7)
 end = time.time()

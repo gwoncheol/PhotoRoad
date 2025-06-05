@@ -4,7 +4,7 @@ import torch
 import os
 
 # 이미지 경로 설정
-IMAGE_DIR = "./images"  # 이미지가 있는 폴더 경로
+IMAGE_DIR = "./JejuImage"  # 이미지가 있는 폴더 경로
 DEVICE = "cuda" if torch.cuda.is_available() else "cpu"
 
 # 모델과 프로세서 로드 (blip2-opt-2.7b)
@@ -16,7 +16,7 @@ model = Blip2ForConditionalGeneration.from_pretrained(
 model.to(DEVICE)
 
 # 결과 저장
-output_file = "blip2_captions.txt"
+output_file = "blip2_captions3.txt"
 with open(output_file, "w", encoding="utf-8") as f:
     for filename in os.listdir(IMAGE_DIR):
         if filename.lower().endswith((".png", ".jpg", ".jpeg")):
@@ -28,6 +28,6 @@ with open(output_file, "w", encoding="utf-8") as f:
             generated_text = processor.batch_decode(generated_ids, skip_special_tokens=True)[0].strip()
 
             print(f"{filename}: {generated_text}")
-            f.write(f"{filename}: {generated_text}\n")
+            f.write(f'{filename}, "{generated_text}"\n')
 
-print("✅ BLIP-2 캡션 생성 완료! 결과는 'blip2_captions.txt'에 저장되었습니다.")
+print("✅ BLIP-2 캡션 생성 완료! 결과는 'blip2_captions3.txt'에 저장되었습니다.")

@@ -60,3 +60,4 @@ try:
     print(f"✅ 이미지 및 텍스트 임베딩 저장 완료: {embedding_cache_file}")
 except Exception as e:
     print(f"⚠️ 임베딩 저장 실패, 에러: {e}")
+
