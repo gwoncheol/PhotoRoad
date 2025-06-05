@@ -88,7 +88,7 @@ pip install torch torchvision torchaudio git+https://github.com/openai/CLIP.git 
 
 ## 📁 프로젝트 구조
 
-````
+```
 
 PhotoRoad/
 │
@@ -105,7 +105,7 @@ PhotoRoad/
 │
 └── blip2_caption.py # 이미지에서 라벨 추출 (BLIP-2 기반)
 
-````
+```
 
 ---
 
