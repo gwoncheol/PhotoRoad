@@ -98,6 +98,7 @@ PhotoRoad/
 ├── ImageLabelsEnbedding/ # ✅ 이미지 + 라벨 임베딩 기반 유사도 분석
 │ ├── 12.py # 메인 실행 코드 (pkl 로딩 및 유사도 분석)
 │ ├── embedding2.py # 이미지 & 라벨 임베딩 계산 후 pkl 저장
+│ ├── image_text_similarity_search.py # 이미지, 텍스트 입력 받고 출력함
 │ ├── labels2.csv # 이미지에 대한 라벨 데이터 (텍스트)
 │ └── image_embeddings3.pkl # 저장된 임베딩 캐시 파일
 │
